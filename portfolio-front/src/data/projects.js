@@ -21,7 +21,7 @@ const STATIC_PROJECTS = [
     github_url: "https://github.com/AlirezaAlavi7713/Recrutement-app",
     github_back_url: "",
     type: "fullstack",
-    demo_url: "",
+    demo_url: "https://recrutement-app-ashy.vercel.app",
     image_url: "/images/projects/recrutpro.jpg",
     emoji: "💼",
     period: "Avril 2026",
