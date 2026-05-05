@@ -34,7 +34,7 @@ const STATIC_PROJECTS = [
     github_url: "https://github.com/AlirezaAlavi7713/Hotel-Harmony",
     github_back_url: "",
     type: "fullstack",
-    demo_url: "",
+    demo_url: "https://hotel-harmony-seven.vercel.app",
     image_url: "/images/projects/hotel-harmony.jpg",
     emoji: "🏨",
     period: "Mars 2026",
