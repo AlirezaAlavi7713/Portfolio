@@ -12,7 +12,7 @@ import "../styles/Home.css";
 const TITLES = [
   "Développeur Web & Web Mobile",
   "Future Cybersecurity Expert",
-  "Full-Stack JavaScript",
+  "Full-Stack Développeur",
 ];
 
 const uniqueTechs = new Set(
@@ -48,7 +48,7 @@ const TECHS = [
 const ATOUTS = [
   {
     icon: "⚡",
-    title: "Full-Stack JS",
+    title: "Full-Stack Dev",
     desc: "Du frontend React au backend Node.js/Express, je construis des applications complètes avec une architecture MVC propre et des API REST sécurisées.",
     color: "var(--accent2)",
   },
