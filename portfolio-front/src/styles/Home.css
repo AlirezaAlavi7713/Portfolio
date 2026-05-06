@@ -415,6 +415,7 @@
   .hero-buttons { flex-wrap: nowrap; }
   .hero-buttons .btn-primary,
   .hero-buttons .btn-secondary { flex: 1; justify-content: center; white-space: nowrap; font-size: 0.85rem; padding: 0.8rem 1rem; }
+  .hero-socials { justify-content: center; }
   .stats-bar { grid-template-columns: repeat(2, 1fr); }
   .tech-groups { grid-template-columns: 1fr; }
   .atouts-grid { grid-template-columns: 1fr; }
