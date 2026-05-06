@@ -62,17 +62,19 @@ export default function Projects() {
               </div>
               <div className="project-footer">
                 <div className="project-links">
-                  {project.github_url && (
-                    <a href={project.github_url} target="_blank" rel="noreferrer">
-                      <FaGithub /> Front
+                  {project.github_url && project.type === "fullstack" ? (
+                    <a href={project.github_url} target="_blank" rel="noreferrer" className="badge-type badge-fullstack">
+                      <FaGithub /> Fullstack
                     </a>
-                  )}
-                  {project.github_back_url && (
-                    <a href={project.github_back_url} target="_blank" rel="noreferrer">
-                      <FaGithub /> Back
+                  ) : project.github_url ? (
+                    <a href={project.github_url} target="_blank" rel="noreferrer" className="badge-type badge-frontend">
+                      <FaGithub /> Frontend
                     </a>
-                  )}
-                  {!project.github_back_url && !project.github_url && !project.demo_url && (
+                  ) : project.github_back_url ? (
+                    <a href={project.github_back_url} target="_blank" rel="noreferrer" className="badge-type badge-backend">
+                      <FaGithub /> Backend
+                    </a>
+                  ) : (
                     <span className="no-link">Projet local</span>
                   )}
                 </div>

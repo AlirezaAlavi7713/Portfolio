@@ -83,17 +83,36 @@
   margin-top: auto;
 }
 
-.project-links { display: flex; gap: 1rem; }
-.project-links a {
+.project-links { display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
+
+.badge-type {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  font-weight: 500;
-  transition: color 0.2s;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: opacity 0.2s, transform 0.2s;
+  border: none;
 }
-.project-links a:hover { color: var(--accent2); }
+a.badge-type:hover { opacity: 0.85; transform: translateY(-2px); }
+
+.badge-fullstack {
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: #fff;
+}
+.badge-frontend {
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  color: #fff;
+}
+.badge-backend {
+  background: linear-gradient(135deg, #10b981, #34d399);
+  color: #fff;
+}
+
 
 .btn-view {
   display: inline-flex;
