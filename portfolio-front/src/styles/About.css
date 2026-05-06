@@ -95,15 +95,20 @@
   .timeline-item,
   .timeline-item:nth-child(odd),
   .timeline-item:nth-child(even) {
-    width: 100%;
+    width: calc(100% - 50px);
     margin-left: 50px;
     flex-direction: row;
     text-align: left;
+    box-sizing: border-box;
   }
   .timeline-icon,
   .timeline-item:nth-child(odd) .timeline-icon,
   .timeline-item:nth-child(even) .timeline-icon {
     left: -38px;
     right: auto;
+  }
+  .timeline-content {
+    width: 100%;
+    min-width: 0;
   }
 }
