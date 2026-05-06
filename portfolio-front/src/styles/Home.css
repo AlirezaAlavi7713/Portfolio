@@ -410,8 +410,11 @@
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 768px) {
-  .hero { gap: 2.5rem; padding-top: 2rem; }
+  .hero { gap: 2.5rem; padding-top: 5rem; }
   .hero-photo, .hero-photo-wrapper { width: 200px; height: 200px; }
+  .hero-buttons { flex-wrap: nowrap; }
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary { flex: 1; justify-content: center; }
   .stats-bar { grid-template-columns: repeat(2, 1fr); }
   .tech-groups { grid-template-columns: 1fr; }
   .atouts-grid { grid-template-columns: 1fr; }
