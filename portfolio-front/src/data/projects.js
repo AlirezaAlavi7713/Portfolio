@@ -45,7 +45,7 @@ const STATIC_PROJECTS = [
     description: "Application de consultation de films et de séances. Recherche de films, filtrage par genre, pages acteurs, watchlist personnalisée et gestion des favoris.",
     technologies: "React,Bootstrap,Axios,React Router DOM",
     github_url: "https://github.com/AlirezaAlavi7713/ALLOCIN-",
-    demo_url: "",
+    demo_url: "https://allocin.vercel.app",
     image_url: "/images/projects/allo-cine.jpg",
     emoji: "🎬",
     period: "Octobre 2025",
