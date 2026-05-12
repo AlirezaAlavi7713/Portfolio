@@ -7,7 +7,7 @@ export const sendMessage = async (req, res) => {
     if (!name || !email || !message)
       return res.status(400).json({ message: "Tous les champs sont requis" });
 
-    await Message.create({ name, email, message });
+    try { await Message.create({ name, email, message }); } catch {}
 
     if (process.env.EMAIL_USER && process.env.EMAIL_PASS) {
       try {
