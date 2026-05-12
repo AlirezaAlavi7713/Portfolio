@@ -23,7 +23,11 @@ app.use(hpp());
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:5173",
+    origin: [
+      process.env.FRONTEND_URL || "http://localhost:5173",
+      "https://alireza-alavi.com",
+      "https://www.alireza-alavi.com",
+    ],
     credentials: true,
   })
 );
