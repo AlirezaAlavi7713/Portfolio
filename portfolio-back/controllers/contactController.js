@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 import Message from "../models/Message.js";
 
 export const sendMessage = async (req, res) => {
@@ -9,15 +9,12 @@ export const sendMessage = async (req, res) => {
 
     try { await Message.create({ name, email, message }); } catch {}
 
-    if (process.env.EMAIL_USER && process.env.EMAIL_PASS) {
+    if (process.env.RESEND_API_KEY) {
       try {
-        const transporter = nodemailer.createTransport({
-          service: "gmail",
-          auth: { user: process.env.EMAIL_USER, pass: process.env.EMAIL_PASS },
-        });
-        await transporter.sendMail({
-          from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
-          to: process.env.EMAIL_USER,
+        const resend = new Resend(process.env.RESEND_API_KEY);
+        await resend.emails.send({
+          from: "Portfolio <onboarding@resend.dev>",
+          to: "alirezaalavi7713@gmail.com",
           subject: `Nouveau message de ${name}`,
           html: `
             <h2>Nouveau message depuis ton portfolio</h2>
