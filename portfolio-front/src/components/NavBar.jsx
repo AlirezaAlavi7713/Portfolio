@@ -24,6 +24,8 @@ export default function NavBar() {
     };
   }, [menuOpen]);
 
+  const handleNav = () => { setMenuOpen(false); window.scrollTo({ top: 0, behavior: "smooth" }); };
+
   const links = [
     { to: "/", label: "Accueil" },
     { to: "/about", label: "À propos" },
@@ -50,7 +52,7 @@ export default function NavBar() {
             <Link
               to={l.to}
               className={location.pathname === l.to ? "active" : ""}
-              onClick={() => setMenuOpen(false)}
+              onClick={handleNav}
             >
               {l.label}
             </Link>
@@ -58,7 +60,7 @@ export default function NavBar() {
         ))}
         {user && (
           <>
-            <li><Link to="/admin" onClick={() => setMenuOpen(false)}>Admin</Link></li>
+            <li><Link to="/admin" onClick={handleNav}>Admin</Link></li>
             <li>
               <button className="logout-btn" onClick={logout}>Déconnexion</button>
             </li>
