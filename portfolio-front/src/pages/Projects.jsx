@@ -36,6 +36,9 @@ export default function Projects() {
             whileHover={{ y: -8 }}
           >
             <div className="project-img-wrapper">
+              {project.demo && (
+                <span className="demo-badge">Mode démo</span>
+              )}
               {project.image_url ? (
                 <img
                   src={project.image_url.startsWith("/") ? project.image_url : `http://localhost:3000${project.image_url}`}

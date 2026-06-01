@@ -11,6 +11,7 @@ const STATIC_PROJECTS = [
     image_url: "/images/projects/network-monitor.png",
     emoji: "🌐",
     period: "Juin 2026",
+    demo: true,
   },
   {
     id: 5,
