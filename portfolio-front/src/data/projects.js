@@ -1,5 +1,18 @@
 const STATIC_PROJECTS = [
   {
+    id: 6,
+    name: "Network Monitor",
+    description: "Dashboard de monitoring réseau en temps réel. Visualise les connexions actives, identifie les appareils sur le réseau local, audite les ports ouverts et calcule un score de sécurité avec conseils contextuels. Données live via WebSocket.",
+    technologies: "React,Vite,Node.js,Express,socket.io,Recharts,lsof,ARP",
+    github_url: "https://github.com/AlirezaAlavi7713/Network-monitor",
+    github_back_url: "",
+    type: "fullstack",
+    demo_url: "https://network-monitor-chi.vercel.app",
+    image_url: "/images/projects/network-monitor.png",
+    emoji: "🌐",
+    period: "Juin 2026",
+  },
+  {
     id: 5,
     name: "VaultKey",
     description: "Gestionnaire de mots de passe zero-knowledge full-stack. Chiffrement AES-256-GCM côté client, dérivation PBKDF2 (310 000 itérations), double authentification TOTP (2FA), auto-verrouillage par inactivité, vérification HaveIBeenPwned et export chiffré.",
