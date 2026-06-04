@@ -41,7 +41,7 @@ export default function Projects() {
               )}
               {project.image_url ? (
                 <img
-                  src={project.image_url.startsWith("/") ? project.image_url : `http://localhost:3000${project.image_url}`}
+                  src={project.image_url.startsWith("/") ? project.image_url : `${import.meta.env.VITE_API_URL || "http://localhost:3006"}${project.image_url}`}
                   alt={project.name}
                   className="project-img"
                 />
