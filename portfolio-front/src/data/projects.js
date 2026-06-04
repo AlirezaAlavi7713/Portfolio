@@ -1,5 +1,18 @@
 const STATIC_PROJECTS = [
   {
+    id: 7,
+    name: "Web Vulnerability Scanner",
+    description: "Scanner de sécurité web fullstack. Analyse les en-têtes HTTP (HSTS, CSP, X-Frame-Options...), détecte les fuites d'information (Server, X-Powered-By, cookies non sécurisés), vérifie HTTPS et calcule un score de sécurité 0-100. Protection SSRF intégrée, rate limiting, graphique radar et export rapport.",
+    technologies: "React,Vite,Node.js,Express,Axios,Helmet,express-rate-limit",
+    github_url: "https://github.com/AlirezaAlavi7713/web-vulnerability-scanner",
+    github_back_url: "",
+    type: "fullstack",
+    demo_url: "https://web-vulnerability-scanner-delta.vercel.app",
+    image_url: null,
+    emoji: "🔍",
+    period: "Juin 2026",
+  },
+  {
     id: 6,
     name: "Network Monitor",
     description: "Dashboard de monitoring réseau en temps réel. Visualise les connexions actives, identifie les appareils sur le réseau local, audite les ports ouverts et calcule un score de sécurité avec conseils contextuels. Données live via WebSocket.",
