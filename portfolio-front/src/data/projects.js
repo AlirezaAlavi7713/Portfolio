@@ -8,7 +8,7 @@ const STATIC_PROJECTS = [
     github_back_url: "",
     type: "fullstack",
     demo_url: "https://web-vulnerability-scanner-delta.vercel.app",
-    image_url: null,
+    image_url: "/images/projects/web-vulnerability-scanner.png",
     emoji: "🔍",
     period: "Juin 2026",
   },
